@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import '@fontsource/noto-sans-jp';
+import '@fontsource/inter';
+
 
 function App() {
   return (
