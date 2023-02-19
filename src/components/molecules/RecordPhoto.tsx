@@ -1,5 +1,4 @@
 import { PhotoCaption } from 'src/components/atoms';
-import { img } from 'src/constants/imgPaths';
 
 type Props = {
   text: string;
@@ -11,7 +10,7 @@ export const RecordPhoto = (props: Props) => {
 
   return (
     <div className="relative cursor-pointer">
-      <img className="w-[234px] h-[234px] object-cover" src={img} alt="" />
+      <img className="w-[234px] h-[234px] object-cover" src={img} alt={text} />
       <div className="w-[120px] h-8 absolute bottom-0">
         <PhotoCaption text={text} />
       </div>
