@@ -23,7 +23,6 @@ export const Top = () => {
         </div>
       </div>
 
-      {/* メインエリア */}
       <div className="w-[960px] mx-auto">
         {/* インプットメニュー */}
         <div className="mb-6">
