@@ -1,5 +1,10 @@
-import { Header } from 'src/components/organisms';
+import { Footer, Header } from 'src/components/organisms';
 
 export const Top = () => {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <Footer />
+    </>
+  );
 };

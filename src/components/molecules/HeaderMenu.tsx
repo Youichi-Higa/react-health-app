@@ -7,7 +7,7 @@ export const HeaderMenu = () => {
       <HeaderItem imgPath={img.header.memo} text="自分の記録" />
       <HeaderItem imgPath={img.header.challenge} text="チャレンジ" />
       <HeaderItem imgPath={img.header.info} text="お知らせ" />
-      <img className="m-4" src={img.header.hamburgerMenu} alt="ハンバーガーメニュー" />
+      <img className="m-4 cursor-pointer" src={img.header.hamburgerMenu} alt="ハンバーガーメニュー" />
     </div>
   );
 };
