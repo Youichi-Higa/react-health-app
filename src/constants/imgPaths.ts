@@ -17,31 +17,34 @@ const menu = {
   snack: `${menuDir}/snack.png`,
 } as const;
 
-const photsDir = `${imgDir}/phots`;
-const phots = {
-  column1: `${photsDir}/column-1.png`,
-  column2: `${photsDir}/column-2.png`,
-  column3: `${photsDir}/column-3.png`,
-  column4: `${photsDir}/column-4.png`,
-  column5: `${photsDir}/column-5.png`,
-  column6: `${photsDir}/column-6.png`,
-  column7: `${photsDir}/column-7.png`,
-  column8: `${photsDir}/column-8.png`,
-  d01: `${photsDir}/d01.png`,
-  d02: `${photsDir}/d02.png`,
-  l01: `${photsDir}/l01.png`,
-  l02: `${photsDir}/l02.png`,
-  l03: `${photsDir}/l03.png`,
-  myRecommend1: `${photsDir}/MyRecommend-1.png`,
-  myRecommend2: `${photsDir}/MyRecommend-2.png`,
-  myRecommend3: `${photsDir}/MyRecommend-3.png`,
-  s01: `${photsDir}/s01.png`,
+const photosDir = `${imgDir}/photos`;
+const photos = {
+  column1: `${photosDir}/column-1.jpg`,
+  column2: `${photosDir}/column-2.jpg`,
+  column3: `${photosDir}/column-3.jpg`,
+  column4: `${photosDir}/column-4.jpg`,
+  column5: `${photosDir}/column-5.jpg`,
+  column6: `${photosDir}/column-6.jpg`,
+  column7: `${photosDir}/column-7.jpg`,
+  column8: `${photosDir}/column-8.jpg`,
+  d01: `${photosDir}/d01.jpg`,
+  d02: `${photosDir}/d02.jpg`,
+  l01: `${photosDir}/l01.jpg`,
+  l02: `${photosDir}/l02.jpg`,
+  l03: `${photosDir}/l03.jpg`,
+  m01: `${photosDir}/m01.jpg`,
+  m02: `${photosDir}/m02.jpg`,
+  m03: `${photosDir}/m03.jpg`,
+  myRecommend1: `${photosDir}/MyRecommend-1.jpg`,
+  myRecommend2: `${photosDir}/MyRecommend-2.jpg`,
+  myRecommend3: `${photosDir}/MyRecommend-3.jpg`,
+  s01: `${photosDir}/s01.jpg`,
 } as const;
 
 export const img = {
   header,
   menu,
-  phots,
+  photos,
   logo: `${imgDir}/logo.png`,
   scroll: `${imgDir}/scroll.png`,
 } as const;
