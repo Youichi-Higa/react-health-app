@@ -1,20 +1,27 @@
 import { useEffect, useState } from 'react';
-import { getRecordPhotos } from 'src/api';
+import { getBodyRecords, getRecordPhotos } from 'src/api';
 import { Button } from 'src/components/atoms';
-import { InputMenu, RecordPhoto, TopPhoto } from 'src/components/molecules';
-import type { Photo } from 'src/types';
+import { BodyChart, InputMenu, RecordPhoto, TopPhoto } from 'src/components/molecules';
+import type { ExerciseRecord, Photo } from 'src/types';
 
 export const Top = () => {
+  const [exerciseRecords, setExerciseRecords] = useState<ExerciseRecord[]>();
   const [recordPhotos, setRecordPhotos] = useState<Photo[]>();
 
   useEffect(() => {
-    const data = getRecordPhotos();
-    setRecordPhotos(data);
+    setExerciseRecords(getBodyRecords())
+    setRecordPhotos(getRecordPhotos());
   }, []);
 
   return (
     <>
-      <TopPhoto date={'05/21'} achievementRate={75} />
+      {/* 達成率・折線グラフ */}
+      <div className="flex mb-6">
+        <TopPhoto date={'05/21'} achievementRate={75} />
+        <div className="bg-dark-600 w-full flex justify-center">
+          <BodyChart exerciseRecord={exerciseRecords} />
+        </div>
+      </div>
 
       {/* メインエリア */}
       <div className="w-[960px] mx-auto">
