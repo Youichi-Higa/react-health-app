@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getBodyRecords, getDiaries, getExerciseRecords } from 'src/api';
+import { PrimaryBtn } from 'src/components/atoms';
 import { BodyChartWithBtn, MyDiary, MyExercise, RecordMenu } from 'src/components/molecules';
 import type { BodyRecord, Diary, ExerciseRecord, SelectedSpan } from 'src/types';
 
@@ -35,6 +36,11 @@ export const MyRecord = () => {
       {/* 日記 */}
       <div className="mb-[30px]">
         <MyDiary diaries={diaries} />
+      </div>
+
+      {/* ボタン */}
+      <div className="w-[296px] h-16 mx-auto  mb-16">
+        <PrimaryBtn text="自分の日記をもっと見る" />
       </div>
     </div>
   );
