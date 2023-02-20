@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { getBodyRecords, getRecordPhotos } from 'src/api';
 import { PrimaryBtn } from 'src/components/atoms';
 import { BodyChart, InputMenu, RecordPhoto, TopPhoto } from 'src/components/molecules';
+import { Footer, Header } from 'src/components/organisms';
 import type { BodyRecord, Photo } from 'src/types';
 
 export const Top = () => {
@@ -9,12 +10,14 @@ export const Top = () => {
   const [recordPhotos, setRecordPhotos] = useState<Photo[]>();
 
   useEffect(() => {
-    setExerciseRecords(getBodyRecords())
+    setExerciseRecords(getBodyRecords());
     setRecordPhotos(getRecordPhotos());
   }, []);
 
   return (
     <>
+      <Header />
+
       {/* 達成率・折線グラフ */}
       <div className="flex mb-6">
         <TopPhoto date={'05/21'} achievementRate={75} />
@@ -47,6 +50,8 @@ export const Top = () => {
           <PrimaryBtn text="記録をもっと見る" />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };

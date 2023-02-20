@@ -41,7 +41,7 @@ const photos = {
   s01: `${photosDir}/s01.jpg`,
 } as const;
 
-export const img = {
+export const imgPath = {
   header,
   menu,
   photos,
