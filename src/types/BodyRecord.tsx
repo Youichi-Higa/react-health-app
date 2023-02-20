@@ -1,4 +1,4 @@
-export type ExerciseRecord = {
+export type BodyRecord = {
   month: string;
   weight: number;
   fatPercentage: number;

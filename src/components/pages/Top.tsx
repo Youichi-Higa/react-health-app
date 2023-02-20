@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { getBodyRecords, getRecordPhotos } from 'src/api';
 import { PrimaryBtn } from 'src/components/atoms';
 import { BodyChart, InputMenu, RecordPhoto, TopPhoto } from 'src/components/molecules';
-import type { ExerciseRecord, Photo } from 'src/types';
+import type { BodyRecord, Photo } from 'src/types';
 
 export const Top = () => {
-  const [exerciseRecords, setExerciseRecords] = useState<ExerciseRecord[]>();
+  const [bodyRecords, setExerciseRecords] = useState<BodyRecord[]>();
   const [recordPhotos, setRecordPhotos] = useState<Photo[]>();
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export const Top = () => {
       <div className="flex mb-6">
         <TopPhoto date={'05/21'} achievementRate={75} />
         <div className="bg-dark-600 w-full flex justify-center">
-          <BodyChart exerciseRecord={exerciseRecords} />
+          <BodyChart bodyRecord={bodyRecords} />
         </div>
       </div>
 

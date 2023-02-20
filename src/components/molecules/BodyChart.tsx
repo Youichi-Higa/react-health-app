@@ -1,18 +1,18 @@
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
-import type { ExerciseRecord } from 'src/types';
+import type { BodyRecord } from 'src/types';
 
 type Props = {
-  exerciseRecord?: ExerciseRecord[];
+  bodyRecord?: BodyRecord[];
 };
 
 export const BodyChart = (props: Props) => {
-  const { exerciseRecord } = props;
+  const { bodyRecord } = props;
 
   return (
     <LineChart
       width={800}
       height={312}
-      data={exerciseRecord}
+      data={bodyRecord}
       margin={{
         top: 16,
         right: 40,
