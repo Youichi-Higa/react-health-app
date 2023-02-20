@@ -2,6 +2,7 @@ export * from './BodyChart';
 export * from './BodyChartWithBtn';
 export * from "./HeaderMenu"
 export * from "./InputMenu"
+export * from "./MyDiary"
 export * from "./MyExercise"
 export * from './RecordMenu';
 export * from './RecordPhoto';

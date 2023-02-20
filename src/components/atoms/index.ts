@@ -1,3 +1,4 @@
+export * from "./DiaryItem"
 export * from "./ExerciseRecordText"
 export * from "./PrimaryBtn"
 export * from "./HeaderItem"
