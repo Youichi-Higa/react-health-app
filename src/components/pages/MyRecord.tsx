@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react';
 import { getBodyRecords, getExerciseRecords } from 'src/api';
-import { RecordCaption } from 'src/components/atoms';
-import { BodyChart, MyExercise, RecordMenu, SpanBtns } from 'src/components/molecules';
-import type { BodyRecord, ExerciseRecord } from 'src/types';
+import { BodyChartWithBtn, MyExercise, RecordMenu } from 'src/components/molecules';
+import type { BodyRecord, ExerciseRecord, SelectedSpan } from 'src/types';
 
 export const MyRecord = () => {
   const [bodyRecords, setBodyRecords] = useState<BodyRecord[]>();
   const [exerciseRecords, setExerciseRecords] = useState<ExerciseRecord[]>();
-  const [selectedSpan, setSelectedSpan] = useState<'日' | '週' | '月' | '年'>('年');
+  const [selectedSpan, setSelectedSpan] = useState<SelectedSpan>('年');
 
   useEffect(() => {
     setBodyRecords(getBodyRecords());
@@ -22,16 +21,8 @@ export const MyRecord = () => {
       </div>
 
       {/* 体重・体脂肪率グラフ */}
-      <div className="bg-dark-600 w-full mb-14">
-        <div className="ml-6 pt-4">
-          <RecordCaption text="BODY RECORD" date="2021.05.21" />
-        </div>
-        <div className="flex justify-center">
-          <BodyChart bodyRecord={bodyRecords} />
-        </div>
-        <div className="ml-8 pb-4">
-          <SpanBtns selectedSpan={selectedSpan} />
-        </div>
+      <div className="mb-14">
+        <BodyChartWithBtn bodyRecords={bodyRecords} selectedSpan={selectedSpan} />
       </div>
 
       {/* 運動記録 */}

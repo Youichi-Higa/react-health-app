@@ -1,4 +1,5 @@
 export * from './BodyChart';
+export * from './BodyChartWithBtn';
 export * from "./HeaderMenu"
 export * from "./InputMenu"
 export * from "./MyExercise"

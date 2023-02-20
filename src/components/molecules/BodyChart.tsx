@@ -37,12 +37,14 @@ export const BodyChart = (props: Props) => {
         stroke="#FFCC21"
         strokeWidth={3}
         dot={{ stroke: '#FFCC21', strokeWidth: 5 }}
+        isAnimationActive={false}
       />
       <Line
         dataKey="fatPercentage"
         stroke="#8FE9D0"
         strokeWidth={3}
         dot={{ stroke: '#8FE9D0', strokeWidth: 5 }}
+        isAnimationActive={false}
       />
     </LineChart>
   );

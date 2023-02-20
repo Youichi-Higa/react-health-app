@@ -1,0 +1,1 @@
+export type SelectedSpan = '日' | '週' | '月' | '年'
