@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getBodyRecords, getRecordPhotos } from 'src/api';
-import { Button } from 'src/components/atoms';
+import { PrimaryBtn } from 'src/components/atoms';
 import { BodyChart, InputMenu, RecordPhoto, TopPhoto } from 'src/components/molecules';
 import type { ExerciseRecord, Photo } from 'src/types';
 
@@ -44,7 +44,7 @@ export const Top = () => {
 
         {/* ボタン */}
         <div className="w-[296px] h-16 mx-auto  mb-16">
-          <Button text="記録をもっと見る" />
+          <PrimaryBtn text="記録をもっと見る" />
         </div>
       </div>
     </>
