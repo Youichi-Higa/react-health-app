@@ -4,7 +4,7 @@ type Props = {
   time: number;
 };
 
-export const ExerciseRecordText = (props: Props) => {
+export const ExerciseRecordItem = (props: Props) => {
   const { text, calorie, time } = props;
 
   return (

@@ -1,4 +1,4 @@
-import { ExerciseRecordText, RecordCaption } from 'src/components/atoms';
+import { ExerciseRecordItem, RecordCaption } from 'src/components/atoms';
 import type { ExerciseRecord } from 'src/types';
 
 type Props = {
@@ -17,7 +17,7 @@ export const MyExercise = (props: Props) => {
       <div className="h-48 mt-5 ml-6 pb-1 overflow-y-auto flex flex-wrap gap-4">
         {exerciseRecords?.map((record) => {
           return (
-            <ExerciseRecordText
+            <ExerciseRecordItem
               key={record.id}
               text={record.name}
               calorie={record.calorie}

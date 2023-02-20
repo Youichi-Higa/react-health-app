@@ -1,5 +1,5 @@
 export * from "./DiaryItem"
-export * from "./ExerciseRecordText"
+export * from "./ExerciseRecordItem"
 export * from "./PrimaryBtn"
 export * from "./HeaderItem"
 export * from './ProgressCircle';
