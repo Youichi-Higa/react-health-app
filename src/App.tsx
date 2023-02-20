@@ -1,5 +1,5 @@
 import { Footer, Header } from 'src/components/organisms';
-import { Top } from 'src/components/pages';
+import { MyRecord, Top } from 'src/components/pages';
 
 import '@fontsource/noto-sans-jp';
 import '@fontsource/inter';
@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <Header />
       <Top />
+      {/* <MyRecord /> */}
       <Footer />
     </div>
   );
