@@ -1,5 +1,6 @@
 export * from './BodyChart';
 export * from './BodyChartWithBtn';
+export * from './ColumnMenu';
 export * from "./HeaderMenu"
 export * from "./InputMenu"
 export * from "./MyDiary"
