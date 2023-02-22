@@ -2,6 +2,7 @@ export * from "./ColumnHeadline"
 export * from "./DiaryItem"
 export * from "./ExerciseRecordItem"
 export * from "./PrimaryBtn"
+export * from "./HamburgerMenuItem"
 export * from "./HeaderItem"
 export * from './ProgressCircle';
 export * from "./PhotoCaption"

@@ -3,6 +3,7 @@ export * from './BodyChartWithBtn';
 export * from './ColumnItem';
 export * from './ColumnMenu';
 export * from './ColumnPhoto';
+export * from "./HamburgerMenu"
 export * from "./HeaderMenu"
 export * from "./InputMenu"
 export * from "./MyDiary"
