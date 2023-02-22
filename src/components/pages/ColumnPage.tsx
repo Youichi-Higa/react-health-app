@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getColumns } from 'src/api';
-import { PrimaryBtn } from 'src/components/atoms';
+import { PrimaryBtn, ScrollTopIcon } from 'src/components/atoms';
 import { ColumnItem, ColumnMenu } from 'src/components/molecules';
 import { Footer, Header } from 'src/components/organisms';
 import type { Column } from 'src/types';
@@ -42,6 +42,9 @@ export const ColumnPage = () => {
           <PrimaryBtn text="コラムをもっと見る" />
         </div>
       </div>
+
+      <ScrollTopIcon />
+
       <Footer />
     </>
   );

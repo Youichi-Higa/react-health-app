@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getBodyRecords, getRecordPhotos } from 'src/api';
-import { PrimaryBtn } from 'src/components/atoms';
+import { PrimaryBtn, ScrollTopIcon } from 'src/components/atoms';
 import { BodyChart, InputMenu, RecordPhoto, TopPhoto } from 'src/components/molecules';
 import { Footer, Header } from 'src/components/organisms';
 import type { BodyRecord, Photo } from 'src/types';
@@ -50,6 +50,8 @@ export const Top = () => {
           <PrimaryBtn text="記録をもっと見る" />
         </div>
       </div>
+
+      <ScrollTopIcon />
 
       <Footer />
     </>
