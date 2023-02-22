@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { HeaderItem } from 'src/components/atoms';
+import { HamburgerMenu } from 'src/components/molecules';
 import { imgPath, urlPath } from 'src/constants';
 
 export const HeaderMenu = () => {
@@ -10,15 +11,11 @@ export const HeaderMenu = () => {
       <HeaderItem
         imgPath={imgPath.header.memo}
         text="自分の記録"
-        goToPage={() => navigate(urlPath.myRecord)}
+        goToNextPage={() => navigate(urlPath.myRecord)}
       />
       <HeaderItem imgPath={imgPath.header.challenge} text="チャレンジ" />
       <HeaderItem imgPath={imgPath.header.info} text="お知らせ" />
-      <img
-        className="m-4 cursor-pointer"
-        src={imgPath.header.hamburgerMenu}
-        alt="ハンバーガーメニュー"
-      />
+      <HamburgerMenu />
     </div>
   );
 };
