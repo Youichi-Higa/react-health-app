@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getBodyRecords, getDiaries, getExerciseRecords } from 'src/api';
-import { PrimaryBtn } from 'src/components/atoms';
+import { PrimaryBtn, ScrollTopIcon } from 'src/components/atoms';
 import { BodyChartWithBtn, MyDiary, MyExercise, RecordMenu } from 'src/components/molecules';
 import { Footer, Header } from 'src/components/organisms';
 import type { BodyRecord, Diary, ExerciseRecord, SelectedSpan } from 'src/types';
@@ -47,6 +47,8 @@ export const MyRecord = () => {
           <PrimaryBtn text="自分の日記をもっと見る" />
         </div>
       </div>
+
+      <ScrollTopIcon />
 
       <Footer />
     </>
