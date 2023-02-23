@@ -10,7 +10,7 @@ export const RecordCaption = (props: Props) => {
   return (
     <div className=" text-light flex">
       <div className="w-24 h-4">
-        <p>
+        <p className=" leading-4">
           {firstLine}
           <br />
           {secondeLine}
